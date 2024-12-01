@@ -15,38 +15,22 @@
     <PackageIcon>frlogo192.png</PackageIcon>
     <AssemblyOriginatorKeyFile>../FastReport.OpenSource.snk</AssemblyOriginatorKeyFile>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Copyright>Fast Reports Inc.</Copyright>
-    <Company>Fast Reports Inc.</Company>
+    <Copyright>Integrated Systems</Copyright>
+    <Company>Intergated Systems</Company>
     <PackageLicenseUrl></PackageLicenseUrl>
     <PackageLicenseFile>FastReport MIT license.md</PackageLicenseFile>
-    <PackageProjectUrl>https://www.fast-report.com/en/product/fast-report-net</PackageProjectUrl>
-    <Authors>Fast Reports Inc.</Authors>
-    <Product>FastReport</Product>
-    <PackageId>FastReport.OpenSource</PackageId>
+    <PackageProjectUrl></PackageProjectUrl>
+    <Authors>Intergated Systems</Authors>
+    <Product>RedKey.FastReport.OpenSource</Product>
+    <PackageId>RedKey.FastReport.OpenSource</PackageId>
     <PackageIconUrl></PackageIconUrl>
     <PackageTags>reporting, reports, pdf, html, mvc, core</PackageTags>
     <Version>1.0.0</Version>
     <Configurations>Debug;Release</Configurations>
     <AssemblyName>FastReport</AssemblyName>
     <RootNamespace>FastReport</RootNamespace>
-    <Description>
-      FastReport Open Source provides a free report generator for .NET/.NET Framework. You can use the FastReport Open Source in MVC, Web API, console applications.
-      FastReport is written in C# and it is compatible with .NET Framework 4.6.2, .NET 6 and higher. Extendable FastReport architecture allows creating your own objects, export filters, wizards, and DB engines.
-      - FastReport is a band-oriented report generator. There are 13 types of bands available: Report Title, Report Summary, Page Header, Page Footer, Column Header, Column Footer, Data Header, Data, Data Footer, Group Header, Group Footer, Child, and Overlay. In addition, sub-reports are fully supported.
-      - A wide range of band types allows creating any kind of report: list, master-detail, group, multi-column, master-detail-detail and many more.
-      - Wide range of available report objects: text, picture, line, shape, barcode, matrix, table, checkbox.
-      - Reports can consist of several design pages, which allows reports to contain a cover, the data and a back cover, all in one file.
-      - The Table object allows building a tabular report with variable number of rows and/or columns, just like in MS Excel. Aggregate functions are also available.
-      - Powerful, fully configurable Matrix object that can be used to print pivot tables.
-      - Report inheritance. For creating many reports with common elements such as titles, logos or footers you can place all the common elements in a base report and inherit all other reports from this base.
-      Data Sources:
-      - You can get data from XML, CSV, JSON, MS SQL, MySQL, Oracle, Postgres, MongoDB, Couchbase, Raven DB, SQLite.
-      - FastReport has the ability to get data from business objects of IEnumerable type.
-      - Report can contain data sources (tables, queries, DB connections).
-      - Thus, you can not only use application-defined datasets but also connect to any database and use tables and queries directly within the report.
-      FastReport Open Source can save documents in HTML, BMP, PNG, JPEG, GIF, TIFF, EMF. PDF export is available as a plugin.
-    </Description>
-    <RepositoryUrl>https://github.com/FastReports/FastReport</RepositoryUrl>
+    <Description>RedKey FastRepors</Description>
+    <RepositoryUrl></RepositoryUrl>
 
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <IncludeSymbols>true</IncludeSymbols>
@@ -71,6 +55,7 @@
   <!--Source Link-->
   <ItemGroup>
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
+    <PackageReference Include="RedKey.FastReport.Compat" Version="1.0.0" />
   </ItemGroup>
 
   <!--Import version-info of referenced packages-->
@@ -110,11 +95,6 @@
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
-  </ItemGroup>
-
-
-  <ItemGroup>
-    <ProjectReference Include="..\FastReport.Compat\FastReport.Compat\FastReport.Compat.csproj" />
   </ItemGroup>
 
 </Project>
