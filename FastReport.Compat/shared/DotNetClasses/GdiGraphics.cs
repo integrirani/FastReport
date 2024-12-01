@@ -128,6 +128,11 @@ namespace FastReport
         public void MeasureString(string text, Font font, SizeF size, StringFormat format, out int charsFit, out int linesFit)
         {
             this.graphics.MeasureString(text, font, size, format, out charsFit, out linesFit);
+
+            if(charsFit == text.Length && linesFit == 2)
+            {
+                charsFit -= 1;
+            }
         }
 
         public SizeF MeasureString(string text, Font drawFont)

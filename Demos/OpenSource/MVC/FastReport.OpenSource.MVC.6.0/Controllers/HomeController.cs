@@ -25,6 +25,7 @@ namespace Demo.MVC.Net6.Controllers
                 WebReport = new WebReport(),
                 ReportsList = new[]
                 {
+                    "Word Wrap Issue",
                     "Simple List",
                     "Labels",
                     "Master-Detail",
@@ -98,6 +99,7 @@ namespace Demo.MVC.Net6.Controllers
                 WebReport = new WebReport(),
                 ReportsList = new[]
                 {
+                    "Word Wrap Issue",
                     "Simple List",
                     "Labels",
                     "Master-Detail",

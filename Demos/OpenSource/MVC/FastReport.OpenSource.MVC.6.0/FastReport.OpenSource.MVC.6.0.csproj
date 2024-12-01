@@ -1,19 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>Demo.MVC.Net6</RootNamespace>
     <Configurations>Debug;Release</Configurations>
+    <UserSecretsId>2b34b025-7105-42d2-8903-07f6402dcd94</UserSecretsId>
   </PropertyGroup>
 	<Import Project="..\..\..\..\UsedPackages.version" />
+
 	<ItemGroup>
-		<PackageReference Include="FastReport.OpenSource" Version="$(FROSVersion)" />
-		<PackageReference Include="FastReport.OpenSource.Web" Version="$(FROSVersion)" />
+		<Compile Include="..\..\_Shared\DataSetService.cs" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<Compile Include ="..\..\_Shared\DataSetService.cs" />
+	  <ProjectReference Include="..\..\..\..\FastReport.Core.Web\FastReport.OpenSource.Web.csproj" />
+	  <ProjectReference Include="..\..\..\..\FastReport.OpenSource\FastReport.OpenSource.csproj" />
 	</ItemGroup>
 </Project>
