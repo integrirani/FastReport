@@ -127,7 +127,7 @@ namespace FastReport
 
         public void MeasureString(string text, Font font, SizeF size, StringFormat format, out int charsFit, out int linesFit)
         {
-            var reducedSize = new SizeF(size.Width - 5, size.Height);
+            var reducedSize = new SizeF(size.Width - 6, size.Height);
 
             this.graphics.MeasureString(text, font, reducedSize, format, out charsFit, out linesFit);
         }
